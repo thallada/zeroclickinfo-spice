@@ -13,6 +13,9 @@ function nrtm(tm) {
 	if (tm[0]['rating']) snippet += ' (Rated: ' + tm[0]['rating'] + '/10)';
 	if (tm[0]['overview']) snippet += '; ' + tm[0]['overview'];
 
+    // Add TMDb attribution
+    snippet += "\n<br><br><font size=\"-2\">This product uses the TMDb API but is not endorsed or certified by TMDb.</font>";
+    
 	items = new Array();
 	items[0] = new Array();
 	items[0]['a'] = snippet;
